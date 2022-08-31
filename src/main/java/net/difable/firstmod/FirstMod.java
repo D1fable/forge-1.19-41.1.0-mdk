@@ -1,6 +1,7 @@
 package net.difable.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.difable.firstmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -10,7 +11,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-//Very Important comment
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(FirstMod.MOD_ID)
 public class FirstMod
@@ -22,6 +22,8 @@ public class FirstMod
     public FirstMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
