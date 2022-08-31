@@ -2,7 +2,6 @@ package net.difable.firstmod;
 
 import com.mojang.logging.LogUtils;
 import net.difable.firstmod.item.ModItems;
-import net.difable.firstmod.item.sound.ModSounds;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,7 +24,6 @@ public class FirstMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
-        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
