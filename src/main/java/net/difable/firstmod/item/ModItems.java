@@ -1,7 +1,6 @@
 package net.difable.firstmod.item;
 
 import net.difable.firstmod.FirstMod;
-import net.difable.firstmod.item.custom.SealItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
