@@ -12,12 +12,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FirstMod.MOD_ID);
 
-    public static final RegistryObject<Item> FLUTE = ITEMS.register("flute",
+    public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
-    public static final RegistryObject<Item> PENIS = ITEMS.register("penis",
+    public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));
-    public static final RegistryObject<Item> SEAL = ITEMS.register("seal",
-            () -> new SealItem(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB).stacksTo(1)));
 
     public static void register(IEventBus eventBus)
     {
