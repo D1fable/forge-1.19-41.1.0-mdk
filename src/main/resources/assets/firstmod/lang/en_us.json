@@ -2,5 +2,9 @@
   "item.firstmod.zircon": "Zircon",
   "item.firstmod.raw_zircon": "Raw Zircon",
 
-  "itemGroup.tutorialtab": "Zircon Tutorial Tab"
+  "itemGroup.tutorialtab": "Zircon Tutorial Tab",
+
+  "block.firstmod.zircon_block": "Block of Zircon",
+  "block.firstmod.zircon_ore": "Zircon Ore",
+  "block.firstmod.deepslate_zircon_ore": "Deepslate Zircon Ore"
 }
