@@ -3,6 +3,7 @@ package net.difable.firstmod;
 import com.mojang.logging.LogUtils;
 import net.difable.firstmod.block.ModBlocks;
 import net.difable.firstmod.item.ModItems;
+import net.difable.firstmod.sound.ModSounds;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,6 +27,7 @@ public class FirstMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

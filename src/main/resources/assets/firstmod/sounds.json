@@ -1,0 +1,8 @@
+{
+  "eight_ball_sound": {
+    "subtitle": "sounds.firstmod.eight_ball_sound",
+    "sounds": [
+      "firstmod:eight_ball_sound"
+    ]
+  }
+}
