@@ -1,6 +1,7 @@
 package net.difable.firstmod.block;
 
 import net.difable.firstmod.FirstMod;
+import net.difable.firstmod.block.custom.JumpyBlock;
 import net.difable.firstmod.item.ModCreativeModTab;
 import net.difable.firstmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -33,6 +34,10 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModTab.TUTORIAL_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
