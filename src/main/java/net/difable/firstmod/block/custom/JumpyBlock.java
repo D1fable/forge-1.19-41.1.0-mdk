@@ -1,7 +1,9 @@
 package net.difable.firstmod.block.custom;
 
+import net.difable.firstmod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -25,7 +27,10 @@ public class JumpyBlock extends Block {
 
         // Server: Main Hand & Off Hand
         // Client: Main Hand & Off Hand
-        player.sendSystemMessage(Component.literal("Right Clicked this"));
+        if(level.isClientSide() && hand == InteractionHand.MAIN_HAND){
+            player.sendSystemMessage(Component.literal("Right Clicked this"));
+            level.playSound(player, blockPos, ModSounds.EIGHT_BALL_SOUND.get(), SoundSource.BLOCKS, 3f, 1f);
+        }
 
         return super.use(blockState, level, blockPos, player, hand, blockHitResult);
     }
