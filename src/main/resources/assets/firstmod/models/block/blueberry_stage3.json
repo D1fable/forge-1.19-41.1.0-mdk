@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "firstmod:block/blueberry_stage3",
+    "crop": "firstmod:block/blueberry_stage3"
 
   }
 }

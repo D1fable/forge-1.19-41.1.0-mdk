@@ -23,7 +23,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "firstmod:blueberry_seeds"
+              "name": "firstmod:blueberry_seed"
             }
           ]
         }
@@ -46,7 +46,7 @@
               }
             }
           ],
-          "name": "firstmod:blueberry_seeds"
+          "name": "firstmod:blueberry_seed"
         }
       ],
       "conditions": [
